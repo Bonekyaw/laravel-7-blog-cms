@@ -25,7 +25,8 @@
 
                         <div class="form-group">
                             {!! Form::label('Publish') !!}
-                            {!! Form::select('is_published', [1 => 'Publish', 0 => 'Draft'], isset($category->is_published) ? $category->is_published : null, ['class' => 'form-control']) !!}
+                            {!! Form::select('is_published', [1 => 'Publish', 0 => 'Draft'], isset($category->is_published) ? $category->is_published : 
+                                                                                                            null, ['class' => 'form-control']) !!}
                         </div>
 
                         {!! Form::submit('Update',['class' => 'btn btn-sm btn-warning']) !!}
